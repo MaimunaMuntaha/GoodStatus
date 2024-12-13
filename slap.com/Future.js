@@ -17,9 +17,7 @@ export default function Future() {
   const [savedMessages, setSavedMessages] = useState([]);
 
   // Initialize Google Generative AI
-  const genAI = new GoogleGenerativeAI(
-    "AIzaSyBKYfJJHlQoSWJkwMnb7eW8onC2gtyBEPU"
-  ); //i should probably make an env but oh well
+  const genAI = new GoogleGenerativeAI("..."); //i should probably make an env but oh well
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   // generate a journal prompt. i used https://ai.google.dev/gemini-api/docs#node.js
